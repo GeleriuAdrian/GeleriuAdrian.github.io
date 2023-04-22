@@ -1,0 +1,71 @@
+/* 
+- Font Sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Main colors: 
+accent:#4dabf7
+bg:#282b3a
+text: #e7e7e7
+c-text:#a5d8ff
+
+*/
+
+:root{
+  --blue:#3a81ba;
+  --light-blue:#a5d8ff;
+  --normal-text:#fff;
+  --light: 300;
+  --bold: 500;
+  --bolder: 700;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  color: var(--normal-text);
+  font-weight: 400;
+  line-height: 1;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.primary-heading{
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  font-weight: var(--bold);
+  letter-spacing: -0.75px;
+}
+
+.secondary-heading{
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.btn{
+  border: none;
+  border-radius: 10px;
+
+}
