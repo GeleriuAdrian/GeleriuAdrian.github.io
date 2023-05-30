@@ -14,58 +14,62 @@ c-text:#a5d8ff
 */
 
 :root{
-  --blue:#3a81ba;
-  --light-blue:#a5d8ff;
-  --normal-text:#fff;
-  --light: 300;
-  --bold: 500;
-  --bolder: 700;
+    --blue: #075af3;
+    --grey:#505050;
+    --white: #fff;
+    --black: #202020;
+    --light-theme-bg: #fafafa;
+    --dark-theme-bg: #030322;
+    --light-blue:#a5d8ff;
+    --light: 300;
+    --bold: 500;
+    --bolder: 700;
 }
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html{
-  font-size: 62.5%;
-  overflow-x: hidden;
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
-  font-family: "Montserrat", sans-serif;
-  color: var(--normal-text);
-  font-weight: 400;
-  line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    line-height: 1;
 }
 
 li{
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a{
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .container{
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .primary-heading{
-  font-size: 6.2rem;
-  text-transform: uppercase;
-  font-weight: var(--bold);
-  letter-spacing: -0.75px;
+    font-size: 6.2rem;
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    letter-spacing: -0.75px;
 }
 
 .secondary-heading{
-  font-size: 3.6rem;
-  font-weight: bold;
+    font-size: 3.6rem;
+    font-weight: bold;
 }
 
 .btn{
-  border: none;
-  border-radius: 10px;
+    border: none;
+    border-radius: 10px;
 
 }

@@ -3,34 +3,81 @@
 /****************************/
 
 .section-home {
-  background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), 
-    url(../img/space.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   height: 100vh;
-}
-
-.img-blur{
-  backdrop-filter: blur(5px);
-  height: 100vh;
+  background-color: #f4f4f4;
+  opacity: 0.8;
+  background-image: linear-gradient(
+      30deg,
+      #ececec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ececec 87.5%,
+      #ececec
+    ),
+    linear-gradient(
+      150deg,
+      #ececec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ececec 87.5%,
+      #ececec
+    ),
+    linear-gradient(
+      30deg,
+      #ececec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ececec 87.5%,
+      #ececec
+    ),
+    linear-gradient(
+      150deg,
+      #ececec 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #ececec 87.5%,
+      #ececec
+    ),
+    linear-gradient(
+      60deg,
+      #ececec77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #ececec77 75%,
+      #ececec77
+    ),
+    linear-gradient(
+      60deg,
+      #ececec77 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #ececec77 75%,
+      #ececec77
+    );
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 
 .header {
-  margin: 0 4.8rem 4.8rem 4.8rem;
-  padding: 4.8rem 0 3.2rem 0;
-  /* border-bottom: 1px solid #444; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10rem;
+  width: 100vw;
+  padding: 0 6.4rem 0 4.8rem;
+  background-color: var(--white);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 10;
 }
 
 .header-name {
-  color: var(--normal-text);
+  color: var(--black);
   font-size: 3rem;
   letter-spacing: 0.75px;
 }
 
-.dot{
+.dot {
   font-size: 8rem;
   color: var(--blue);
   letter-spacing: -2px;
@@ -50,12 +97,12 @@
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .nav-link:link,
 .nav-link:visited {
-  color: var(--normal-text);
+  color: var(--black);
   font-size: 2rem;
   letter-spacing: 0.75px;
   font-weight: var(--bold);
@@ -91,85 +138,64 @@
   align-items: center;
   gap: 4rem;
   padding: 4rem;
-  padding-top: 9.6rem;
+  padding-top: 19.6rem;
 }
 
-.hero-text{
+.hero-text {
   font-size: 3.6rem;
   text-align: center;
   line-height: 1.7;
 }
 
-.title-name{
+.title-name {
   color: var(--blue);
 }
 
 .key-word {
   font-weight: var(--bold);
-  color: var(--normal-text);
+  color: var(--black);
 }
 
-.hero-btn{
+.hero-btn {
   background-color: var(--blue);
-  color: var(--normal-text);
+  color: var(--white);
   font-size: 2.4rem;
   text-transform: uppercase;
   padding: 1.6rem 2.4rem;
-
-
   margin-top: 4.6rem;
   /* clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); */
   transition: all 400ms;
 }
 
-.arrow-down{
-  font-size: 30px;
+.scroll--icon {
+  position: relative;
+  width: 3rem;
+  height: 5rem;
+  border: 0.3rem solid var(--grey);
+  border-radius: 3rem;
+  margin-top: 8rem;
+}
+
+.wheel {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: var(--blue);
+  transform: translateX(-50%);
+  border-radius: 1rem;
+  animation: wheel 1.5s ease-in-out infinite;
 }
 
 /****************************/
 /* ABOUT */
 /****************************/
 
-.section-about{
+.section-about {
   position: relative;
-  height: 100vh;
-  /* clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0); */
-}
-
-/****************************/
-/* CURVES */
-/****************************/
-
-.spacer {
-  aspect-ratio: 960/300;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.layer1 {
-  background-image: url(../svg/layer1.svg);
-}
-
-.triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.triangle svg {
-  /* position: relative; */
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-}
-
-.triangle .shape-fill {
-  fill: #282b3a;
+  height: 90vh;
+  background-color: var(--light-theme-bg);
 }
 
 /****************************/
@@ -180,25 +206,25 @@
   --glow-line-color: #fff;
   --glow-line-width: 2px;
   --glow-line-length: 20px;
-  --glow-blur-color: var(--blue);
-  --glow-blur-size: 10px;
+  --glow-blur-color: var(--light-blue);
+  --glow-blur-size: 8px;
   --animation-length: 1200ms;
-  --border-radius:10px;
+  --border-radius: 10px;
   /* Used for calculations */
   --container-offset: 50px;
   position: relative;
 }
 
-.glow-effect[data-glow-animation="false"]{
+.glow-effect[data-glow-animation="false"] {
   --glow-line-length: 50px;
-  --glow-blur-size:5px;
+  --glow-blur-size: 5px;
   --animation-length: 1000ms;
   --glow-line-width: 1px;
   --glow-line-color: #a5d8ff;
 }
 
-.glow-effect[data-hero-button="true"]{
-  --border-radius:100px;
+.glow-effect[data-hero-button="true"] {
+  --border-radius: 100px;
 }
 
 .glow-container {
@@ -218,41 +244,28 @@
   fill: transparent;
   stroke: black;
   stroke-width: 5px;
-  x:calc(var(--container-offset) / 2);
-  y:calc(var(--container-offset) / 2);
+  x: calc(var(--container-offset) / 2);
+  y: calc(var(--container-offset) / 2);
   rx: var(--border-radius);
   stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length));
-
 }
 
-.glow-blur{
+.glow-blur {
   filter: blur(var(--glow-blur-size));
   stroke: var(--glow-blur-color);
   stroke-width: var(--glow-blur-size);
 }
 
-.glow-line{
+.glow-line {
   stroke: var(--glow-line-color);
   stroke-width: var(--glow-line-width);
 }
 
-.glow-effect:is(:hover, :focus) :is(.glow-blur, .glow-line){
+.glow-effect:is(:hover, :focus) :is(.glow-blur, .glow-line) {
   stroke-dashoffset: -80px;
-  transition: 
-    stroke-dashoffset 
-    var(--animation-length)
-    ease-in;
+  transition: stroke-dashoffset var(--animation-length) ease-in;
 }
 
-.glow-effect:is(:hover, :focus) .glow-container{
+.glow-effect:is(:hover, :focus) .glow-container {
   animation: glow-visibility var(--animation-length);
-}
-
-/****************************/
-/* ANIMATIONS */
-/****************************/
-
-@keyframes glow-visibility{
-  0%,100% {opacity: 0;}
-  25%,75% {opacity: 1;}
 }

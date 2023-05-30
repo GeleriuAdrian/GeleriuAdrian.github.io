@@ -1,0 +1,16 @@
+@keyframes glow-visibility{
+    0%,100% {opacity: 0;}
+    25%,75% {opacity: 1;}
+}
+
+@keyframes wheel {
+    0%{
+        transform: translate(-50%, 0);
+        opacity: 100%;
+    }
+
+    90%,100%{
+        transform: translate(-50%, 150%);
+        opacity: 5%;
+    }
+}
