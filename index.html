@@ -7,77 +7,197 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-        rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
         />
         <link rel="stylesheet" href="css/animations.css" />
         <link rel="stylesheet" href="css/queries.css" />
         <link rel="stylesheet" href="css/general.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <script src="https://kit.fontawesome.com/a8e1cd00e4.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/a8e1cd00e4.js"
+            crossorigin="anonymous"
+        ></script>
         <title>Adrian</title>
     </head>
 
     <body>
-        <section class="section-home">
-        <header class="header">
-            <nav class="nav">
-            <div class="header-text">
-                <span class="header-name">Geleriu Adrian</span>
-                <span class="dot">.</span>
-            </div>
-            <ul class="nav-list">
-                <li>
-                <a class="nav-link" href="#section-about"> About </a>
-                </li>
-                <li><a class="nav-link" href="#section-work">Projects</a></li>
-                <li>
-                <button class="btn nav-button glow-effect" href="#section-contact" data-glow-animation="false">
-                    Contact
+        <section class="section__home">
+            <header class="header">
+                <nav class="nav">
+                    <a class="header-text" href="#">
+                        <span class="header-name">Geleriu Adrian</span>
+                        <span class="dot">.</span>
+                    </a>
+                    <ul class="nav-list">
+                        <li>
+                            <a class="nav-link" href="#section-about">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#section-work"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <button
+                                class="btn nav-button glow-effect"
+                                href="#section-contact"
+                                data-glow-animation="false"
+                            >
+                                Contact
+                                <svg class="glow-container">
+                                    <rect
+                                        pathLength="100"
+                                        stroke-linecap="round"
+                                        class="glow-blur"
+                                    ></rect>
+                                    <rect
+                                        pathLength="100"
+                                        stroke-linecap="round"
+                                        class="glow-line"
+                                    ></rect>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <ion-icon name="sunny-outline" class="theme-icon sun-icon"></ion-icon>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="hero container">
+                <div class="heading__primary">
+                    Hi, I'm <span class="title-name">Adrian</span>
+                </div>
+
+                <p class="hero-text">
+                    I am a front end web developer on a journey to create
+                    <span class="key-word">websites</span> and
+                    <span class="key-word">web applications</span>
+                </p>
+
+                <button class="btn hero-btn glow-effect" href="#section-work">
+                    Check out my work
+
                     <svg class="glow-container">
-                    <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
-                    <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+                        <rect
+                            pathLength="100"
+                            stroke-linecap="round"
+                            class="glow-blur"
+                        ></rect>
+                        <rect
+                            pathLength="100"
+                            stroke-linecap="round"
+                            class="glow-line"
+                        ></rect>
                     </svg>
                 </button>
-                </li>
-            </ul>
-            </nav>
-        </header>
-        <main class="hero container">
-            <div class="primary-heading">
-                Hi, I'm <span class="title-name">Adrian</span>
-            </div>
-            
-            <p class="hero-text">
-            I am a web developer on a journey to
-            <span class="key-word">design websites</span> and
-            <span class="key-word">gain experience</span>
-            </p>
 
-            <button class="btn hero-btn glow-effect" href="#section-contact">
-            Check out my work
-            
-            <svg class="glow-container">
-                <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
-                <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
-            </svg>
-            </button>
-
-            <div class="scroll--icon">
-                <span class="wheel"></span>
-            </div>
-        </main>
+                <div class="scroll--icon">
+                    <span class="wheel"></span>
+                </div>
+            </main>
         </section>
 
-        <section class="section-about">
+        <section class="section__about" id="section-about">
+            <div class="about__box container">
+                <div class="card about__card">
+                    <h2 class="heading__secondary">ABOUT ME</h2>
+                    <ul class="about__list">
+                        <li class="about__text">
+                            I'm a front end web developer building the front-end
+                            of websites and web applications that leads to the
+                            success of the overall product.
+                        </li>
+                        <li class="about__text">
+                            I'm open to job opportunities where I can
+                            contribute, learn and grow. If you have a good
+                            opportunity that matches my skills and experience
+                            then don't hesitate to contact me.
+                        </li>
+                    </ul>
+                </div>
+                <div class="card card__skills">
+                    <h2 class="heading__secondary">MY SKILLS</h2>
+                    <div class="skills__list">
+                        <div class="skill">
+                            <div class="skill__circle container">
+                                <i
+                                    class="fa-brands fa-html5 fa-4x"
+                                    style="color: var(--icon-color)"
+                                ></i>
+                            </div>
+                            <span class="skill__name">HTML</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__circle container">
+                                <i
+                                    class="fa-brands fa-css3-alt fa-4x"
+                                    style="color: var(--icon-color)"
+                                ></i>
+                            </div>
+                            <span class="skill__name">CSS</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__circle container">
+                                <i
+                                    class="fa-brands fa-js fa-4x"
+                                    style="color: var(--icon-color)"
+                                ></i>
+                            </div>
+                            <span class="skill__name">JavaScript</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__circle container">
+                                <i
+                                    class="fa-brands fa-sass fa-3x"
+                                    style="color: var(--icon-color)"
+                                ></i>
+                            </div>
+                            <span class="skill__name">SASS</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__circle container">
+                                <i
+                                    class="fa-solid fa-terminal fa-3x"
+                                    style="color: var(--icon-color)"
+                                ></i>
+                            </div>
+                            <span class="skill__name">Terminal</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__circle container">
+                                <i
+                                    class="fa-solid fa-bolt fa-3x"
+                                    style="color: var(--icon-color)"
+                                ></i>
+                            </div>
+                            <span class="skill__name">Responsive Design</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__circle container">
+                                <i
+                                    class="fa-brands fa-github fa-4x"
+                                    style="color: var(--icon-color)"
+                                ></i>
+                            </div>
+                            <span class="skill__name">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section class="section__projects" id="section-work"></section>
         <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
         ></script>
         <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
     </body>
 </html>
