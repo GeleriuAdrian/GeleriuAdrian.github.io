@@ -12,7 +12,6 @@
         />
         <link rel="stylesheet" href="css/animations.css" />
         <link rel="stylesheet" href="css/queries.css" />
-        <link rel="stylesheet" href="css/general.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script
             src="https://kit.fontawesome.com/a8e1cd00e4.js"
@@ -22,7 +21,7 @@
     </head>
 
     <body>
-        <section class="section__home">
+        <section class="section-home">
             <header class="header">
                 <nav class="nav">
                     <a class="header-text" href="#">
@@ -62,13 +61,22 @@
                             </button>
                         </li>
                         <li>
-                            <ion-icon name="sunny-outline" class="theme-icon sun-icon"></ion-icon>
+                            <ion-icon
+                                name="sunny-outline"
+                                class="theme-icon sun-icon"
+                                onclick="switchTheme()"
+                            ></ion-icon>
+                            <ion-icon
+                                name="moon-outline"
+                                class="theme-icon moon-icon"
+                                onclick="switchTheme()"
+                            ></ion-icon>
                         </li>
                     </ul>
                 </nav>
             </header>
             <main class="hero container">
-                <div class="heading__primary">
+                <div class="heading-primary">
                     Hi, I'm <span class="title-name">Adrian</span>
                 </div>
 
@@ -81,7 +89,7 @@
                 <button class="btn hero-btn glow-effect" href="#section-work">
                     Check out my work
 
-                    <svg class="glow-container">
+                    <svg class="glow-container" href="#section-about">
                         <rect
                             pathLength="100"
                             stroke-linecap="round"
@@ -101,17 +109,17 @@
             </main>
         </section>
 
-        <section class="section__about" id="section-about">
-            <div class="about__box container">
-                <div class="card about__card">
-                    <h2 class="heading__secondary">ABOUT ME</h2>
-                    <ul class="about__list">
-                        <li class="about__text">
+        <section class="section-about" id="section-about">
+            <div class="about-box container">
+                <div class="card about-card">
+                    <h2 class="heading-secondary">ABOUT ME</h2>
+                    <ul class="about-list">
+                        <li class="about-text">
                             I'm a front end web developer building the front-end
                             of websites and web applications that leads to the
                             success of the overall product.
                         </li>
-                        <li class="about__text">
+                        <li class="about-text">
                             I'm open to job opportunities where I can
                             contribute, learn and grow. If you have a good
                             opportunity that matches my skills and experience
@@ -119,78 +127,78 @@
                         </li>
                     </ul>
                 </div>
-                <div class="card card__skills">
-                    <h2 class="heading__secondary">MY SKILLS</h2>
-                    <div class="skills__list">
+                <div class="card card-skills">
+                    <h2 class="heading-secondary">MY SKILLS</h2>
+                    <div class="skills-list">
                         <div class="skill">
-                            <div class="skill__circle container">
-                                <i
-                                    class="fa-brands fa-html5 fa-4x"
-                                    style="color: var(--icon-color)"
-                                ></i>
+                            <div class="skill-circle container">
+                                <ion-icon
+                                    name="logo-html5"
+                                    class="skill-icon"
+                                ></ion-icon>
                             </div>
-                            <span class="skill__name">HTML</span>
+                            <span class="skill-name">HTML</span>
                         </div>
                         <div class="skill">
-                            <div class="skill__circle container">
-                                <i
-                                    class="fa-brands fa-css3-alt fa-4x"
-                                    style="color: var(--icon-color)"
-                                ></i>
+                            <div class="skill-circle container">
+                                <ion-icon name="logo-css3" class="skill-icon"></ion-icon>
                             </div>
-                            <span class="skill__name">CSS</span>
+                            <span class="skill-name">CSS</span>
                         </div>
                         <div class="skill">
-                            <div class="skill__circle container">
-                                <i
-                                    class="fa-brands fa-js fa-4x"
-                                    style="color: var(--icon-color)"
-                                ></i>
+                            <div class="skill-circle container">
+                                <ion-icon name="logo-javascript" class="skill-icon"></ion-icon>
                             </div>
-                            <span class="skill__name">JavaScript</span>
+                            <span class="skill-name">JavaScript</span>
                         </div>
                         <div class="skill">
-                            <div class="skill__circle container">
-                                <i
-                                    class="fa-brands fa-sass fa-3x"
-                                    style="color: var(--icon-color)"
-                                ></i>
+                            <div class="skill-circle container">
+                                <ion-icon
+                                    class="skill-icon"
+                                    name="server-outline"
+                                ></ion-icon>
                             </div>
-                            <span class="skill__name">SASS</span>
+                            <span class="skill-name">PHP</span>
                         </div>
                         <div class="skill">
-                            <div class="skill__circle container">
-                                <i
-                                    class="fa-solid fa-terminal fa-3x"
-                                    style="color: var(--icon-color)"
-                                ></i>
+                            <div class="skill-circle container">
+                                <ion-icon name="logo-sass" class="skill-icon"></ion-icon>
                             </div>
-                            <span class="skill__name">Terminal</span>
+                            <span class="skill-name">SASS</span>
                         </div>
                         <div class="skill">
-                            <div class="skill__circle container">
-                                <i
-                                    class="fa-solid fa-bolt fa-3x"
-                                    style="color: var(--icon-color)"
-                                ></i>
+                            <div class="skill-circle container">
+                                <ion-icon name="terminal-outline" class="skill-icon"></ion-icon>
                             </div>
-                            <span class="skill__name">Responsive Design</span>
+                            <span class="skill-name">Terminal</span>
                         </div>
                         <div class="skill">
-                            <div class="skill__circle container">
-                                <i
-                                    class="fa-brands fa-github fa-4x"
-                                    style="color: var(--icon-color)"
-                                ></i>
+                            <div class="skill-circle container">
+                                <ion-icon name="flash-outline" class="skill-icon"></ion-icon>
                             </div>
-                            <span class="skill__name">GitHub</span>
+                            <span class="skill-name">Responsive Design</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-circle container">
+                                <ion-icon name="logo-github" class="skill-icon"></ion-icon>
+                            </div>
+                            <span class="skill-name">GitHub</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section__projects" id="section-work"></section>
+        <section class="section-projects" id="section-work">
+            <div class="work-container">
+                <h2 class="work-title">My Projects</h2>
+                <div class="projects-container">
+                    <div class="project-card" href="Site-Muzeu/index.html">
+                        <img src="img/muzeu.png" alt="" >
+                    </div>
+                </div>
+            </div>
+        </section>
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -199,5 +207,6 @@
             nomodule
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
+        <script src="script.js"></script>
     </body>
 </html>
