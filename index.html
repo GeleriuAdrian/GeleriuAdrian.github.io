@@ -1,212 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/animations.css" />
-        <link rel="stylesheet" href="css/queries.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <script
-            src="https://kit.fontawesome.com/a8e1cd00e4.js"
-            crossorigin="anonymous"
-        ></script>
-        <title>Adrian</title>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrian Geleriu — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <body>
-        <section class="section-home">
-            <header class="header">
-                <nav class="nav">
-                    <a class="header-text" href="#">
-                        <span class="header-name">Geleriu Adrian</span>
-                        <span class="dot">.</span>
-                    </a>
-                    <ul class="nav-list">
-                        <li>
-                            <a class="nav-link" href="#section-about">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#section-work"
-                                >Projects</a
-                            >
-                        </li>
-                        <li>
-                            <button
-                                class="btn nav-button glow-effect"
-                                href="#section-contact"
-                                data-glow-animation="false"
-                            >
-                                Contact
-                                <svg class="glow-container">
-                                    <rect
-                                        pathLength="100"
-                                        stroke-linecap="round"
-                                        class="glow-blur"
-                                    ></rect>
-                                    <rect
-                                        pathLength="100"
-                                        stroke-linecap="round"
-                                        class="glow-line"
-                                    ></rect>
-                                </svg>
-                            </button>
-                        </li>
-                        <li>
-                            <ion-icon
-                                name="sunny-outline"
-                                class="theme-icon sun-icon"
-                                onclick="switchTheme()"
-                            ></ion-icon>
-                            <ion-icon
-                                name="moon-outline"
-                                class="theme-icon moon-icon"
-                                onclick="switchTheme()"
-                            ></ion-icon>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="hero container">
-                <div class="heading-primary">
-                    Hi, I'm <span class="title-name">Adrian</span>
-                </div>
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">ga<span>.</span></a>
+    <ul class="nav-links">
+      <li class="hide-mobile"><a href="#about">About</a></li>
+      <li class="hide-mobile"><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="contact-link">Contact</a></li>
+    </ul>
+  </nav>
 
-                <p class="hero-text">
-                    I am a front end web developer on a journey to create
-                    <span class="key-word">websites</span> and
-                    <span class="key-word">web applications</span>
-                </p>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
 
-                <a class="btn hero-btn glow-effect" href="#section-work">
-                    Check out my work
+    <p class="hero-eyebrow">// frontend developer</p>
+    <h1 class="hero-name">
+      Adrian<br>
+      <span class="accent">Geleriu</span>
+    </h1>
+    <p class="hero-role">
+      Building interfaces that are fast, accessible, and intentionally designed.
+      Based in Cluj-Napoca, Romania.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get in touch</a>
+      <a href="#skills" class="btn-secondary">See my skills</a>
+    </div>
 
-                    <svg class="glow-container" href="#section-about">
-                        <rect
-                            pathLength="100"
-                            stroke-linecap="round"
-                            class="glow-blur"
-                        ></rect>
-                        <rect
-                            pathLength="100"
-                            stroke-linecap="round"
-                            class="glow-line"
-                        ></rect>
-                    </svg>
-                </a>
+    <div class="hero-scroll">
+      <span class="scroll-label">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-                <div class="scroll--icon">
-                    <span class="wheel"></span>
-                </div>
-            </main>
-        </section>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="reveal">
+      <p class="section-label">// 01 — about</p>
+      <h2 class="section-title">Who I am</h2>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>
+          I'm a frontend developer with a passion for <strong>clean, purposeful design</strong> and well-structured code.
+          I care about the details — the kind that make an interface feel polished and natural to use.
+        </p>
+        <p>
+          I'm currently expanding my skillset toward <strong>React and TypeScript</strong>, with the goal of building
+          more capable, production-grade web applications. I'm open to junior frontend roles where I can contribute,
+          learn fast, and grow alongside a team.
+        </p>
+        <p>
+          Beyond the browser, I'm comfortable in a <strong>Linux environment</strong> — I run a fully custom NixOS
+          system and have a strong grasp of the terminal, version control, and development tooling.
+        </p>
+        <div class="about-meta">
+          <div class="meta-item">
+            <span class="meta-key">location</span>
+            <span class="meta-val">Cluj-Napoca, Romania</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-key">status</span>
+            <span class="meta-val">Open to opportunities</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-key">github</span>
+            <span class="meta-val"><a href="https://github.com/GeleriuAdrian" target="_blank">GeleriuAdrian</a></span>
+          </div>
+        </div>
+      </div>
 
-        <section class="section-about" id="section-about">
-            <div class="about-box container">
-                <div class="card about-card">
-                    <h2 class="heading-secondary">ABOUT ME</h2>
-                    <ul class="about-list">
-                        <li class="about-text">
-                            I'm a front end web developer building the front-end
-                            of websites and web applications that leads to the
-                            success of the overall product.
-                        </li>
-                        <li class="about-text">
-                            I'm open to job opportunities where I can
-                            contribute, learn and grow. If you have a good
-                            opportunity that matches my skills and experience
-                            then don't hesitate to contact me.
-                        </li>
-                    </ul>
-                </div>
-                <div class="card card-skills">
-                    <h2 class="heading-secondary">MY SKILLS</h2>
-                    <div class="skills-list">
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon
-                                    name="logo-html5"
-                                    class="skill-icon"
-                                ></ion-icon>
-                            </div>
-                            <span class="skill-name">HTML</span>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon name="logo-css3" class="skill-icon"></ion-icon>
-                            </div>
-                            <span class="skill-name">CSS</span>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon name="logo-javascript" class="skill-icon"></ion-icon>
-                            </div>
-                            <span class="skill-name">JavaScript</span>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon
-                                    class="skill-icon"
-                                    name="server-outline"
-                                ></ion-icon>
-                            </div>
-                            <span class="skill-name">PHP</span>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon name="logo-sass" class="skill-icon"></ion-icon>
-                            </div>
-                            <span class="skill-name">SASS</span>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon name="terminal-outline" class="skill-icon"></ion-icon>
-                            </div>
-                            <span class="skill-name">Terminal</span>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon name="flash-outline" class="skill-icon"></ion-icon>
-                            </div>
-                            <span class="skill-name">Responsive Design</span>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-circle container">
-                                <ion-icon name="logo-github" class="skill-icon"></ion-icon>
-                            </div>
-                            <span class="skill-name">GitHub</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="about-right">
+        <div class="stat-card">
+          <span class="stat-number">3+</span>
+          <span class="stat-desc">years building for the web</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">∞</span>
+          <span class="stat-desc">hours in the terminal</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">0</span>
+          <span class="stat-desc">tolerance for bad UX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="reveal">
+      <p class="section-label">// 02 — skills</p>
+      <h2 class="section-title">What I work with</h2>
+    </div>
+    <div class="skills-grid reveal">
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 3l1.5 16L12 21l6.5-2L20 3H4z"/><path d="M16.5 8H8l.5 4h7.5l-.5 5-3.5 1-3.5-1-.25-2.5"/></svg>
+        </div>
+        <span class="skill-name">HTML</span>
+        <span class="skill-tag">Markup</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 3l1.5 16L12 21l6.5-2L20 3H4z"/><path d="M16.5 8H8l.5 4H16l-.5 5-3.5 1-3.5-1-.25-2.5"/></svg>
+        </div>
+        <span class="skill-name">CSS</span>
+        <span class="skill-tag">Styling</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 17c0 1.5 2 2 3 1s1-3-1-3-3-1-2-3 3-2 4 0M15 12v5"/></svg>
+        </div>
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-tag">Language</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+        </div>
+        <span class="skill-name">React</span>
+        <span class="skill-tag learning">Learning</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h6M12 9v6"/></svg>
+        </div>
+        <span class="skill-name">TypeScript</span>
+        <span class="skill-tag learning">Learning</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M6 8v8a6 6 0 006 2m6-12v8a6 6 0 01-6 2"/></svg>
+        </div>
+        <span class="skill-name">Git</span>
+        <span class="skill-tag">Version control</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l4 3-4 3M13 15h4"/></svg>
+        </div>
+        <span class="skill-name">Linux / CLI</span>
+        <span class="skill-tag">Environment</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="14" height="10" rx="1.5"/><rect x="16" y="8" width="6" height="7" rx="1"/></svg>
+        </div>
+        <span class="skill-name">Responsive Design</span>
+        <span class="skill-tag">Web</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="reveal">
+        <p class="section-label">// 03 — contact</p>
+        <h2 class="section-title">Let's talk</h2>
+        <p class="contact-sub">
+          I'm currently open to junior frontend opportunities and freelance work.
+          If you have a project in mind or a role that might be a fit, I'd love to hear from you.
+        </p>
+      </div>
+      <div class="contact-links reveal">
+
+        <a href="mailto:ady04@proton.me" class="contact-link-item">
+          <div class="contact-link-left">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
             </div>
-        </section>
-
-        <section class="section-projects" id="section-work">
-            <div class="work-container">
-                <h2 class="work-title heading-secondary">My Projects</h2>
-                <div class="projects-container">
-                    <a class="project-card" href="https://geleriuadrian.github.io/muzeu-ceasuri.github.io/">
-                        <img src="img/muzeu.png" alt="screenshot of museum website" class="project-img">
-                    </a>
-                </div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">ady04@proton.me</div>
             </div>
-        </section>
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-            nomodule
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-        ></script>
-        <script src="script.js"></script>
-    </body>
+          </div>
+          <div class="contact-link-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/YOUR-SLUG-HERE" target="_blank" class="contact-link-item">
+          <div class="contact-link-left">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg>
+            </div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">Adrian Geleriu</div>
+            </div>
+          </div>
+          <div class="contact-link-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </a>
+
+        <a href="https://github.com/GeleriuAdrian" target="_blank" class="contact-link-item">
+          <div class="contact-link-left">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div>
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">GeleriuAdrian</div>
+            </div>
+          </div>
+          <div class="contact-link-arrow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-name">Adrian Geleriu<span>.</span></span>
+    <span class="footer-copy">© 2025 — All rights reserved</span>
+    <a href="https://github.com/GeleriuAdrian" target="_blank" class="footer-github">github.com/GeleriuAdrian</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
